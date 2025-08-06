@@ -10,6 +10,10 @@ body {
   color: #1a1a1a;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -198,6 +202,84 @@ nav a:hover {
   object-fit: cover;
   border-radius: 50%;
 }
+
+
+.about-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 6px 8px rgba(0, 200, 150, 0.1);
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #00a883;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.skills-container {
+  margin-top: 1.5rem;
+}
+
+.skills-container h3 {
+  font-size: 1.3rem;
+  color: #00a883;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.skills-columns {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.skills-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-columns li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 500;
+  cursor: default;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-columns li:hover {
+  color: #00a883;
+  transform: scale(1.05);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .skills-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
 
 @keyframes fadeInLeft {
   from { opacity: 0; transform: translateX(-50px); }
