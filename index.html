@@ -7,36 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 1. Hero Section -->
+    <!-- 1. Navbar & Hero Section -->
 <header>
-         <div class="logo">
-             <div class="icon-circle">ZA</div>
-                 <span class="logo-text">Zeko</span>
+     <div class="logo">
+         <div class="icon-circle">
+             <img src="logo.png" alt="ZA Logo" />
          </div>
-     <nav>
-         <a href="#" class="active">Home</a>
-         <a href="#">About</a>
-         <a href="#">Projects</a>
-         <a href="#">Service</a>
-         <a href="#" class="contact-link">Contact</a>
-     </nav>
+             <span class="logo-text">Zeko</span>
+     </div>
+
+<nav id="nav">
+     <a href="#home" class="active">Home</a>
+     <a href="#about">About</a>
+     <a href="#project">Projects</a>
+     <a href="#services">Services</a>
+     <a href="#contact">Contact</a>
+</nav>
+
+     <div class="hamburger" id="hamburger">
+         <span></span>
+         <span></span>
+         <span></span>
+     </div>
 </header>
 
 <section class="hero">
-     <div class="hero-left">
+    <div class="hero-left">
          <h1>Hi, I'm Zeko Ameti</h1>
-         <p>Web developer building modern websites.</p>
-             <div class="buttons">
-                 <a href="#contact" class="btn-contact">Contact</a>
-                 <a href="#projects" class="btn-projects">Projects</a>
-             </div>
-    </div>
-    <div class="hero-right">
-         <div class="profile-pic">
-             <img src="photo.jpg" alt="Profile Picture">
-         </div>
-    </div>
+         <p>I’m a passionate Front-End Developer currently training at Capstone Evolve, dedicated to building modern, user-friendly websites and constantly learning new technologies.</p>
+     <div class="buttons">
+         <a href="#contact" class="btn-contact">Contact</a>
+         <a href="#projects" class="btn-projects">Projects</a>
+     </div>
+  </div>
+
+  <div class="hero-right">
+     <div class="profile-pic">
+         <img src="photo.jpg" alt="Profile Picture">
+     </div>
+  </div>
 </section>
+
+<script>
+    
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+
+</script>
      <!-- 2. About Section -->
       <!-- 3. Project Section -->
        <!-- 4. Service Section -->
