@@ -215,7 +215,7 @@ nav a:hover {
 .about-container {
   max-width: 900px;
   margin: 0 auto;
-  box-shadow: 0 6px 8px rgba(0, 200, 150, 0.1);
+  box-shadow: 0 6px 8px rgba(0, 200, 150, 0.03);
 }
 
 .about-text h2 {
@@ -271,6 +271,110 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* Projects Section */
+.projects-section {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.projects-section .section-title h2 {
+  font-size: 2rem;
+  color: #00a883;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.projects-section .section-title p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #f7f8fa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  color: #00a883;
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-links .btn-live {
+  background: #00c896;
+  color: white;
+}
+
+.project-links .btn-live:hover {
+  background: #009f74;
+}
+
+.project-links .btn-github {
+  border: 1px solid #00c896;
+  color: #00c896;
+}
+
+.project-links .btn-github:hover {
+  background: #00c896;
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* Mobile Responsive */
 @media (max-width: 600px) {
   .skills-columns {
@@ -320,5 +424,16 @@ nav a:hover {
 
   .buttons {
     justify-content: center;
+  } 
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 10px;
   }
 }
+
