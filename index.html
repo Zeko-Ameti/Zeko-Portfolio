@@ -165,16 +165,26 @@
 </section>
 
         <!-- 5. Contact Section-->
-         <section id="contact" class="contact-section">
-  <div class="section-title">
-    <h2>Contact Me</h2>
-    <p>Let's work together or just say hello</p>
-  </div>
+        <section class="contact-section" id="contact"> 
   <div class="contact-container">
     <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <h2>Contact Me</h2>
+
+      <div class="form-group">
+        <input type="text" required>
+        <label>Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="form-group">
+        <textarea required></textarea>
+        <label>Message</label>
+      </div>
+
       <button type="submit" class="btn-submit">Send Message</button>
     </form>
   </div>
