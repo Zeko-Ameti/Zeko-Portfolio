@@ -203,6 +203,19 @@ nav a:hover {
   border-radius: 50%;
 }
 
+section {
+  min-height: 100vh; 
+  justify-content: center; 
+  padding: 2rem 5%; 
+  scroll-margin-top: 80px
+}
+
+.about-section,
+.services-section,
+.projects-section,
+.contact-section {
+  min-height: 100vh;
+}
 
 .about-section {
   padding: 60px 20px;
@@ -237,10 +250,11 @@ nav a:hover {
 }
 
 .skills-container h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #00a883;
   margin-bottom: 15px;
   font-weight: 600;
+  margin-top: 8rem;
 }
 
 .skills-columns {
@@ -248,7 +262,7 @@ nav a:hover {
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .skills-columns ul {
@@ -367,11 +381,77 @@ nav a:hover {
   color: white;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: 1fr;
-  }
+/* =========================
+   Services Section CSS
+========================= */
+
+.services-section {
+  min-height: 100vh;                 /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;           /* vertical center */
+  align-items: center;               /* horizontal center */
+  background: linear-gradient(135deg, #e0f7f1, #f7f8fa);
+  padding: 2rem;
+  text-align: center;
+}
+
+.services-section .section-title {
+  margin-bottom: 3rem;
+}
+
+.services-section .section-title h2 {
+  font-size: 2.5rem;
+  color: #00a883;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.services-section .section-title p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Grid container for service cards */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;                         /* space between cards */
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Individual service card */
+.service-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  flex: 1 1 280px;                   /* responsive width */
+  max-width: 350px;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.15);
+}
+
+/* Card title */
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #00a883;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Card description */
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
 
@@ -384,7 +464,6 @@ nav a:hover {
 }
 
 
-
 @keyframes fadeInLeft {
   from { opacity: 0; transform: translateX(-50px); }
   to { opacity: 1; transform: translateX(0); }
@@ -395,6 +474,7 @@ nav a:hover {
   to { opacity: 1; transform: translateX(0); }
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   nav {
     display: none;
@@ -435,5 +515,29 @@ nav a:hover {
     flex-direction: column;
     gap: 10px;
   }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+    .services-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .service-card {
+    max-width: 100%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .services-section .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .services-section .section-title p {
+    font-size: 1rem;
+  }
 }
+
+
 
