@@ -86,6 +86,7 @@ nav a:hover {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  transition: 0.3s ease-in-out;
 }
 
 .hamburger span {
@@ -93,6 +94,17 @@ nav a:hover {
   width: 25px;
   background: #00a883;
   border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .hero {
@@ -265,7 +277,7 @@ section .section-title {
 .about-container {
   max-width: 1000px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.85); /* glass effect */
+  background: rgba(255, 255, 255, 0.85); 
   backdrop-filter: blur(8px);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -293,7 +305,7 @@ section .section-title {
 }
 
 .about-text p {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   margin: 20px auto 40px;
   max-width: 750px;
@@ -305,7 +317,7 @@ section .section-title {
 }
 
 .skills-container h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #00a883;
   margin-bottom: 30px;
   font-weight: 600;
@@ -335,7 +347,7 @@ section .section-title {
 }
 
 .skills-columns li {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 12px;
   color: #333;
   font-weight: 500;
@@ -511,6 +523,20 @@ section .section-title {
   padding: 2rem;
   text-align: center;
 }
+
+.service-card i {
+  font-size: 2.5rem;
+  color: #00a883;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.service-card:hover i {
+  transform: translateY(-6px);
+  color: #008c6c;
+}
+
 
 .services-section .section-title {
   margin-bottom: 3rem;
