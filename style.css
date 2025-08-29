@@ -239,7 +239,7 @@ section {
 }
 
 section p {
-  font-size: 1.15rem; 
+  font-size: 1.35rem; 
   color: #444;
   line-height: 1.7;
   max-width: 750px;
@@ -253,7 +253,7 @@ section .section-title {
 
 .about-section {
   padding: 60px 20px;
-   padding-top: 80px;
+  padding-top: 80px;
   background: #f7f8fa;
   font-family: 'Segoe UI', sans-serif;
   color: #333;
@@ -286,7 +286,7 @@ section .section-title {
 }
 
 .about-text p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   margin: 20px auto 40px;
   max-width: 750px;
@@ -301,7 +301,7 @@ section .section-title {
 }
 
 .skills-container p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #555;
   margin-bottom: 40px;
 }
@@ -333,13 +333,13 @@ section .section-title {
 }
 
 .skill-card h4 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #333;
 }
 
 .skill-card:hover {
-  transform: translateY(-8px) scale(1.03);
+  transform: translateY(-8px);
   background: rgba(0, 168, 131, 0.05);
   box-shadow: 0 12px 25px rgba(0, 168, 131, 0.15);
 }
@@ -357,14 +357,14 @@ section .section-title {
 }
 
 .projects-section .section-title h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #00a883;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
 .projects-section .section-title p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #555;
   margin-bottom: 50px;
 }
@@ -407,12 +407,12 @@ section .section-title {
 .project-card h3 {
   color: #00a883;
   margin: 10px 0;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .project-card p {
   color: #444;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 15px;
 }
 
@@ -422,6 +422,7 @@ section .section-title {
   gap: 15px;
   flex-wrap: nowrap;
   margin-top: 10px; 
+  font-size: 1.3rem;
 }
 
 .project-links a {
@@ -489,14 +490,14 @@ section .section-title {
 }
 
 .services-section .section-title h2 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   color: #00a883;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .services-section .section-title p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #555;
 }
 
@@ -533,7 +534,7 @@ section .section-title {
 }
 
 .service-card p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #555;
   line-height: 1.6;
 }
@@ -567,22 +568,11 @@ section .section-title {
 }
 
 .contact-form h2 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   color: #00a883;
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
-  position: relative;
-}
-
-.contact-form h2::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #00c896;
-  margin: 12px auto 0;
-  border-radius: 2px;
 }
 
 .form-group {
@@ -607,7 +597,7 @@ section .section-title {
   left: 15px;
   top: 18px;
   color: #aaa;
-  font-size: 1rem;
+  font-size: 1.3rem;
   pointer-events: none;
   transition: all 0.3s ease;
 }
@@ -634,7 +624,7 @@ section .section-title {
   color: white;
   border: none;
   padding: 16px 0;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   border-radius: 12px;
   cursor: pointer;
@@ -685,7 +675,7 @@ section .section-title {
 }
 
 .footer-future {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   max-width: 300px;
   color: #bbb;
@@ -699,12 +689,12 @@ section .section-title {
 }
 
 .footer-short {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: #bbb;
 }
 
 .footer-email {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 .footer-email a {
@@ -718,7 +708,7 @@ section .section-title {
 }
 
 .quick-links-title {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: #fff;
   margin-bottom: 8px;
 }
@@ -762,7 +752,7 @@ section .section-title {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 15px;
   margin-top: 30px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #777;
 }
 
