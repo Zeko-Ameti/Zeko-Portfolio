@@ -203,12 +203,12 @@
 
     <!-- Project 3 -->
     <div class="project-card">
-      <img src="Hero-Section.jpg" alt="Project 3 Thumbnail">
-      <h3>Creative Front-End Project</h3>
-      <p>A modern, interactive front-end project highlighting responsive design and smooth animations.</p>
+      <img src="Nature.jpg" alt="Project 3 Thumbnail">
+      <h3>Explore Nature</h3>
+      <p>A modern, interactive front-end Nature project, responsive design and smooth animations.</p>
       <div class="project-links">
-        <a href="https://zekoameti.github.io/Hero-Section/" target="_blank" class="btn-live">Live Demo</a>
-        <a href="https://github.com/Zeko-Ameti/Hero-Section.git" class="btn-github" target="_blank">GitHub</a>
+        <a href="https://zeko-ameti.github.io/Nature-Website/" target="_blank" class="btn-live">Live Demo</a>
+        <a href="https://github.com/Zeko-Ameti/Nature-Website.git" class="btn-github" target="_blank">GitHub</a>
       </div>
     </div>
 
@@ -248,29 +248,33 @@
   </div>
 </section>
 
-        <!-- 5. Contact Section-->
-        <section class="contact-section" id="contact"> 
+     <section class="contact-section" id="contact"> 
   <div class="contact-container">
-    <form class="contact-form">
+
+    <!-- Form starts here -->
+    <form action="https://formspree.io/f/xkgvoyeb" method="POST" class="contact-form" target="_blank">
+      
       <h2>Contact Me</h2>
 
       <div class="form-group">
-        <input type="text" required>
+        <input type="text" name="name" placeholder="" required>
         <label>Name</label>
       </div>
 
       <div class="form-group">
-        <input type="email" required>
+        <input type="email" name="email" placeholder="" required>
         <label>Email</label>
       </div>
 
       <div class="form-group">
-        <textarea required></textarea>
+        <textarea name="message" placeholder="" required></textarea>
         <label>Message</label>
       </div>
 
       <button type="submit" class="btn-submit">Send Message</button>
     </form>
+    <!-- Form ends here -->
+
   </div>
 </section>
 
@@ -279,7 +283,7 @@
 <footer class="footer-section">
   <div class="footer-container">
 
-    <!-- Left: Logo + Future Plans -->
+    <!-- Left: Logo + Future Plans (unchanged) -->
     <div class="footer-left">
       <div class="logo">
         <img src="logo.png" alt="ZA Logo" class="logo-img"/>
@@ -290,24 +294,25 @@
       </p>
     </div>
 
-    <!-- Center: Email + Quick Links -->
-    <div class="footer-center">
+    <!-- Center + Right combined -->
+    <div class="footer-center-right">
+      <h4 class="footer-right-title">About This Portfolio</h4>
+      <p class="footer-short">Showcasing my best projects and skills.</p>
       <p class="footer-email">Email: <a href="mailto:zaprojectss@gmail.com">zaprojectss@gmail.com</a></p>
+      
+      <h4 class="quick-links-title">Quick Links</h4>
       <ul class="footer-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
 
-    <!-- Right: Social Icons -->
-    <div class="footer-right">
       <div class="social-icons">
         <a href="https://github.com/Zeko-Ameti/Portfolio-Design.git" target="_blank" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+        <a href="https://www.instagram.com/zekoameti" target="_blank" aria-label="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
       </div>
