@@ -1100,5 +1100,10 @@ section .section-title {
   .footer-links {
     flex-direction: column;
     gap: 10px;
+    display: none;
+  }
+
+   h4.quick-links-title {
+    display: none;
   }
 }
